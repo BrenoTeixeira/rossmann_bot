@@ -99,5 +99,5 @@ if __name__ == '__main__':
     updater.start_webhook(listen='0.0.0.0',
                           port=int(os.environ.get('PORT', 5000)),
                           url_path=telegram_bot_token,
-                          webhook_url = 'https://api.telegram.org/bot' + telegram_bot_token)
+                          webhook_url = 'https://rossmann-bot-6f26.onrender.com' + telegram_bot_token)
 
