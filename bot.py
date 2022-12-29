@@ -34,8 +34,8 @@ def load_database(update, context):
 
     if store_id != 'error':
 
-        df = pd.read_csv('DATA/test.csv')
-        store = pd.read_csv('DATA/store.csv')
+        df = pd.read_csv('../DATA/test.csv')
+        store = pd.read_csv('../DATA/store.csv')
 
         raw_data = pd.merge(df, store, how='left', on='Store')
 
