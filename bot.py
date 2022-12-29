@@ -97,8 +97,8 @@ if __name__ == '__main__':
 
 
     updater.start_webhook(listen='127.0.0.1',
-                          port=int(os.environ.get('PORT', 8080)),
+                          port=int(os.environ.get('PORT', 5000)),
                           url_path=telegram_bot_token,
-                          webhook_url = 'https://brenoteixeira-rossmann-bot.streamlit.app/' + telegram_bot_token)
+                          webhook_url = 'https://rossmann-bot-mzgs.onrender.com/' + telegram_bot_token)
 
     updater.idle()
